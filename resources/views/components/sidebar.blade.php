@@ -4,7 +4,7 @@
             <div class="app-brand">
               <a href="{{ asset('theme') }}/index.html">
                 <img src="{{ asset('theme') }}/images/logo.png" alt="Mono">
-                <span class="brand-name">MONO</span>
+                <span class="brand-name">UNIBA MADURA</span>
               </a>
             </div>
             <!-- begin sidebar scrollbar -->
@@ -14,64 +14,39 @@
                 
 
                 
-                  <li
-                   class="active"
-                   >
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/index.html">
+                  <li class="active">
+                    <a class="sidenav-item-link" href="{{ asset('theme') }}/dashboard">
                       <i class="mdi mdi-briefcase-account-outline"></i>
                       <span class="nav-text">Dashboard</span>
                     </a>
                   </li>
                  
-                 
-            
-                
                   <li class="section-title">
                     Auth
                   </li>
-                
 
-                
-
-                
-                  <li
-                   >
+                  <li>
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/chat.html">
                       <i class="mdi mdi-wechat"></i>
                       <span class="nav-text">Manajemen Akun</span>
                     </a>
                   </li>
-                
-
-                
-
-                
-                  <li
-                   >
+      
+                  <li>
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/contacts.html">
                       <i class="mdi mdi-phone"></i>
                       <span class="nav-text">Contacts</span>
                     </a>
                   </li>
-                
-
-                
-
-                
-                  <li
-                   >
+                   
+                  <li>
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/team.html">
                       <i class="mdi mdi-account-group"></i>
                       <span class="nav-text">Team</span>
                     </a>
                   </li>
                 
-
-                
-
-                
-                  <li
-                   >
+                  <li>
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/calendar.html">
                       <i class="mdi mdi-calendar-check"></i>
                       <span class="nav-text">Calendar</span>
@@ -101,49 +76,28 @@
                               </a>
                             </li>
                           
-                        
-
-                        
-                        
-                          
-                            <li >
+                            <li>
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/email-details.html">
                                 <span class="nav-text">Email Details</span>
                                 
                               </a>
                             </li>
-                          
-                        
-
-                        
-                        
-                          
-                            <li >
+                    
+                            <li>
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/email-compose.html">
                                 <span class="nav-text">Email Compose</span>
                                 
                               </a>
                             </li>
-                          
-                        
 
-                        
                       </div>
                     </ul>
                   </li>
-                
-
-                
-
-                
+                      
                   <li class="section-title">
                     UI Elements
                   </li>
-                
 
-                
-
-                
                   <li  class="has-sub" >
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
                       aria-expanded="false" aria-controls="ui-elements">
@@ -154,19 +108,12 @@
                       data-parent="#sidebar-menu">
                       <div class="sub-menu">
                         
-                        
-                          
-                            <li >
+                        <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/alert.html">
                                 <span class="nav-text">Alert</span>
                                 
                               </a>
                             </li>
-                          
-                        
-
-                        
-                        
                           
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/badge.html">
@@ -174,12 +121,7 @@
                                 
                               </a>
                             </li>
-                          
-                        
 
-                        
-                        
-                          
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/breadcrumb.html">
                                 <span class="nav-text">Breadcrumb</span>
@@ -187,10 +129,7 @@
                               </a>
                             </li>
                           
-                        
 
-                        
-                        
                         <li  class="has-sub" >
                           <a class="sidenav-item-link" href="{{ asset('theme') }}/javascript:void(0)" data-toggle="collapse" data-target="#buttons"
                             aria-expanded="false" aria-controls="buttons">
@@ -223,10 +162,7 @@
                           </ul>
                         </li>
                         
-
-                        
-                        
-                          
+  
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/card.html">
                                 <span class="nav-text">Card</span>
@@ -234,22 +170,12 @@
                               </a>
                             </li>
                           
-                        
-
-                        
-                        
-                          
-                            <li >
+                          <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/carousel.html">
                                 <span class="nav-text">Carousel</span>
                                 
                               </a>
                             </li>
-                          
-                        
-
-                        
-                        
                           
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/collapse.html">
@@ -258,11 +184,6 @@
                               </a>
                             </li>
                           
-                        
-
-                        
-                        
-                          
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/editor.html">
                                 <span class="nav-text">Editor</span>
@@ -270,23 +191,13 @@
                               </a>
                             </li>
                           
-                        
-
-                        
-                        
-                          
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/list-group.html">
                                 <span class="nav-text">List Group</span>
                                 
                               </a>
                             </li>
-                          
-                        
 
-                        
-                        
-                          
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/modal.html">
                                 <span class="nav-text">Modal</span>
@@ -294,10 +205,6 @@
                               </a>
                             </li>
                           
-                        
-
-                        
-                        
                           
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/pagination.html">
@@ -305,12 +212,7 @@
                                 
                               </a>
                             </li>
-                          
-                        
-
-                        
-                        
-                          
+                            
                             <li >
                               <a class="sidenav-item-link" href="{{ asset('theme') }}/popover-tooltip.html">
                                 <span class="nav-text">Popover & Tooltip</span>
