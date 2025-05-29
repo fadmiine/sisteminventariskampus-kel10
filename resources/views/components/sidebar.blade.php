@@ -1,3 +1,4 @@
+
  <aside class="left-sidebar sidebar-dark" id="left-sidebar">
           <div id="sidebar" class="sidebar sidebar-with-footer">
             <!-- Aplication Brand -->
@@ -15,7 +16,7 @@
 
                 
                   <li class="active">
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/dashboard">
+                    <a class="sidenav-item-link" href="{{ asset('theme') }}/index.html">
                       <i class="mdi mdi-briefcase-account-outline"></i>
                       <span class="nav-text">Dashboard</span>
                     </a>
