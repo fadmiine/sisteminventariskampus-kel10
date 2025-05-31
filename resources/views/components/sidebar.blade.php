@@ -1,10 +1,9 @@
-
  <aside class="left-sidebar sidebar-dark" id="left-sidebar">
           <div id="sidebar" class="sidebar sidebar-with-footer">
             <!-- Aplication Brand -->
             <div class="app-brand">
-              <a href="{{ asset('theme') }}/index.html">
-                <img src="{{ asset('theme') }}/images/logo.png" alt="Mono">
+              <a href="/dashboard">
+                <img src="{{ asset('theme') }}/images/uniba.png" alt="Mono">
                 <span class="brand-name">UNIBA MADURA</span>
               </a>
             </div>
@@ -15,44 +14,44 @@
                 
 
                 
-                  <li class="active">
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/index.html">
+              <li class="nav-item {{ Request::is('dashboard') ? 'active' : '' }}">
+                  <a class="nav-link" href="/dashboard">
                       <i class="mdi mdi-briefcase-account-outline"></i>
-                      <span class="nav-text">Dashboard</span>
-                    </a>
-                  </li>
-                 
-                  <li class="section-title">
-                    Auth
-                  </li>
+                      <span>Dashboard</span>
+                  </a>
+              </li>
 
-                  <li>
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/chat.html">
-                      <i class="mdi mdi-wechat"></i>
-                      <span class="nav-text">Manajemen Akun</span>
+                 
+              <li class="section-title">
+                Auth
+              </li>
+
+                  
+              @php
+                $menuItems = [
+                    ['label' => 'Contacts', 'url' => 'contacts', 'icon' => 'mdi-briefcase-account-outline'],
+                    ['label' => 'Team', 'url' => 'team', 'icon' => 'mdi-briefcase-account-outline'],
+                    // Tambahkan menu lainnya di sini
+                ];
+                $activeClass = 'active';
+            @endphp
+
+            @foreach ($menuItems as $menuItem)
+                <li class="nav-item {{ Request::is($menuItem['url']) ? $activeClass : '' }}">
+                    <a class="nav-link" href="{{ url($menuItem['url']) }}">
+                        <i class="mdi {{ $menuItem['icon'] }}"></i>
+                        <span>{{ $menuItem['label'] }}</span>
                     </a>
-                  </li>
-      
-                  <li>
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/contacts.html">
-                      <i class="mdi mdi-phone"></i>
-                      <span class="nav-text">Contacts</span>
-                    </a>
-                  </li>
-                   
-                  <li>
-                    <a class="sidenav-item-link" href="{{ asset('theme') }}/team.html">
-                      <i class="mdi mdi-account-group"></i>
-                      <span class="nav-text">Team</span>
-                    </a>
-                  </li>
-                
-                  <li>
+                </li>
+            @endforeach
+
+              
+                  {{-- <li>
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/calendar.html">
                       <i class="mdi mdi-calendar-check"></i>
                       <span class="nav-text">Calendar</span>
                     </a>
-                  </li>
+                  </li> --}}
                 
 
                 

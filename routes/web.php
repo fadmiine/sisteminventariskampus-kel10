@@ -24,3 +24,11 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+
+Route::get('/team', function () {
+    return view('team');
+});
