@@ -1,4 +1,20 @@
- <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+ @php
+    $role = Auth::user()->role ?? null;
+@endphp
+
+@if ($role === 'admin')
+    @include('admin.partials.sidebar')
+@elseif ($role === 'staff')
+    @include('staff.partials.sidebar')
+@elseif ($role === 'user')
+    @include('user.partials.sidebar')
+@else
+    {{-- Optional default sidebar --}}
+    <p>No sidebar available</p>
+@endif
+
+ 
+ {{-- <aside class="left-sidebar sidebar-dark" id="left-sidebar">
           <div id="sidebar" class="sidebar sidebar-with-footer">
             <!-- Aplication Brand -->
             <div class="app-brand">
@@ -17,6 +33,7 @@
                   <li class="active">
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/dashboard">
                       <i class="mdi mdi-briefcase-account-outline"></i>
+<<<<<<< Updated upstream
                       <span class="nav-text">Dashboard</span>
                     </a>
                   </li>
@@ -47,6 +64,19 @@
                   </li>
                 
                   <li>
+=======
+                      <span>Dashboard</span>
+                  </a>
+              </li>
+
+                 
+              <li class="section-title">
+                Auth
+              </li>
+
+              
+                   <li>
+>>>>>>> Stashed changes
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/calendar.html">
                       <i class="mdi mdi-calendar-check"></i>
                       <span class="nav-text">Calendar</span>
@@ -583,7 +613,7 @@
                         
                           
                             <li >
-                              <a class="sidenav-item-link" href="{{ asset('theme') }}/sign-up.html">
+                              <a class="sidenav-item-link" href="/register">
                                 <span class="nav-text">Sign Up</span>
                                 
                               </a>
@@ -766,4 +796,8 @@
               </div>
             </div>
           </div>
+<<<<<<< Updated upstream
         </aside>
+=======
+        </aside> --}}
+>>>>>>> Stashed changes
