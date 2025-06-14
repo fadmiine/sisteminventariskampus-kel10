@@ -16,19 +16,11 @@ class Kernel extends HttpKernel
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
-<<<<<<< HEAD
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        \Illuminate\Http\Middleware\HandleCors::class,
+        \Illuminate\Http\Middleware\HandleCors::class, // Gunakan ini untuk Laravel 9+
 =======
         // \Fruitcake\Cors\HandleCors::class,
 >>>>>>> Stashed changes
-=======
-        // \Fruitcake\Cors\HandleCors::class,
->>>>>>> Stashed changes
-=======
-        \Illuminate\Http\Middleware\HandleCors::class,
->>>>>>> parent of 7256fa1 (admin)
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
@@ -52,7 +44,7 @@ class Kernel extends HttpKernel
 
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+            \Illuminate\Routing\Middleware\ThrottleRequests::class . ':api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
@@ -76,5 +68,10 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        'role' => \App\Http\Middleware\RoleMiddleware::class,
     ];
+
+    
+    
 }

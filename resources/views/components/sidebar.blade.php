@@ -1,4 +1,20 @@
- <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+ @php
+    $role = Auth::user()->role ?? null;
+@endphp
+
+@if ($role === 'admin')
+    @include('admin.partials.sidebar')
+@elseif ($role === 'staff')
+    @include('staff.partials.sidebar')
+@elseif ($role === 'user')
+    @include('user.partials.sidebar')
+@else
+    {{-- Optional default sidebar --}}
+    <p>No sidebar available</p>
+@endif
+
+ 
+ {{-- <aside class="left-sidebar sidebar-dark" id="left-sidebar">
           <div id="sidebar" class="sidebar sidebar-with-footer">
             <!-- Aplication Brand -->
             <div class="app-brand">
@@ -61,11 +77,14 @@
               
                    <li>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of 7256fa1 (admin)
+=======
+>>>>>>> Stashed changes
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/calendar.html">
                       <i class="mdi mdi-calendar-check"></i>
                       <span class="nav-text">Calendar</span>
@@ -602,7 +621,7 @@
                         
                           
                             <li >
-                              <a class="sidenav-item-link" href="{{ asset('theme') }}/sign-up.html">
+                              <a class="sidenav-item-link" href="/register">
                                 <span class="nav-text">Sign Up</span>
                                 
                               </a>
@@ -785,6 +804,7 @@
               </div>
             </div>
           </div>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -798,3 +818,6 @@
 =======
         </aside>
 >>>>>>> parent of 7256fa1 (admin)
+=======
+        </aside> --}}
+>>>>>>> Stashed changes
