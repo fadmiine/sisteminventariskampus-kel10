@@ -47,6 +47,25 @@
                   </li>
                 
                   <li>
+<<<<<<< HEAD
+=======
+                      <span>Dashboard</span>
+                  </a>
+              </li>
+
+                 
+              <li class="section-title">
+                Auth
+              </li>
+
+              
+                   <li>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of 7256fa1 (admin)
                     <a class="sidenav-item-link" href="{{ asset('theme') }}/calendar.html">
                       <i class="mdi mdi-calendar-check"></i>
                       <span class="nav-text">Calendar</span>
@@ -766,4 +785,16 @@
               </div>
             </div>
           </div>
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         </aside>
+=======
+        </aside> --}}
+>>>>>>> Stashed changes
+=======
+        </aside> --}}
+>>>>>>> Stashed changes
+=======
+        </aside>
+>>>>>>> parent of 7256fa1 (admin)

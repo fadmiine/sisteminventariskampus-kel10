@@ -16,7 +16,19 @@ class Kernel extends HttpKernel
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         \Illuminate\Http\Middleware\HandleCors::class,
+=======
+        // \Fruitcake\Cors\HandleCors::class,
+>>>>>>> Stashed changes
+=======
+        // \Fruitcake\Cors\HandleCors::class,
+>>>>>>> Stashed changes
+=======
+        \Illuminate\Http\Middleware\HandleCors::class,
+>>>>>>> parent of 7256fa1 (admin)
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,

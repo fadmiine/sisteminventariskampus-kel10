@@ -33,6 +33,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> parent of 7256fa1 (admin)
     /**
      * The attributes that should be cast.
      *
@@ -42,4 +47,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+<<<<<<< HEAD
+=======
+    
+>>>>>>> Stashed changes
+=======
+    
+>>>>>>> Stashed changes
+=======
+>>>>>>> parent of 7256fa1 (admin)
 }
