@@ -32,3 +32,11 @@ Route::get('/contacts', function () {
 Route::get('/team', function () {
     return view('team');
 });
+
+Route::get('/index_staff', function () {
+    return view('staff.index');
+});
+
+Route::get('/create_staff', function () {
+    return view('staff.create');
+});

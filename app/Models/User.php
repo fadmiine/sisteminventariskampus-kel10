@@ -55,4 +55,5 @@ public function isCustomer()
 {
     return $this->role === 'customer';
 }
+
 }
